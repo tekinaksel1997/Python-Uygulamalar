@@ -1,0 +1,12 @@
+birinci = input("İlk Sayıyı Giriniz: ")
+ikinci = input("İkinci Sayıyı Giriniz: ")
+ucuncu = input("Üçüncü Sayıyı Giriniz: ")
+dortuncu = input("Dördüncü Sayıyı Giriniz: ")
+besinci = input("Beşinci Sayıyı Giriniz: ")
+x=[birinci,ikinci,ucuncu,dortuncu,besinci]
+x.sort(reverse=True)
+print(x)
+
+y=open("221120171004_sonuc.txt","w")
+for a in range(5):
+    y.write(x[b]+" ")
