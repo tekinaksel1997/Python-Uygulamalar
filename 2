@@ -1,0 +1,19 @@
+yazi=input("Cümle giriniz: ")
+tersten=yazi[::-1]
+
+harf=[]
+sayi=[]
+for i in yazi:
+    if not(i in harf):
+        harf.append(i)
+        sayi.append(1)
+    else:
+        sayi[harf.index(i)]=sayi[harf.index(i)]+1
+print("Harfler = Sayılar")
+for i in range(len(harf)):
+    print(harf[i], " = ", sayi[i])
+print("Toplam Kaç Harf Olduğu: ",len(sayi))
+print(tersten)
+liste=[yazi.split()]
+print(liste)
+print(tersten.split())
